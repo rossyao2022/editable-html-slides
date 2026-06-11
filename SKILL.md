@@ -14,6 +14,15 @@ description: >-
   presenter view and speaker notes) but works on any deck using the
   `.slide` / `.is-active` convention. Needs no Node, npm, build step, or network.
 license: MIT
+author: rossyao2022
+version: "1.0"
+tags:
+  - presentation
+  - slides
+  - html
+  - editor
+  - wysiwyg
+  - frontend
 metadata:
   author: rossyao2022
   version: 1.0.0
