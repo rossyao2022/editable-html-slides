@@ -13,6 +13,17 @@ It pairs especially well with [html-ppt](https://github.com/lewislulu/html-ppt-s
 / reveal-style decks — it preserves their presenter view and speaker notes — but
 works on any deck using the `.slide` / `.is-active` convention.
 
+![editable-html-slides demo](docs/demo.gif)
+
+<p align="center">
+  <img src="docs/screenshot-edit-en.png" width="49%" alt="edit mode (English)">
+  <img src="docs/screenshot-edit-zh.png" width="49%" alt="编辑模式（中文）">
+</p>
+
+> 中文：把 AI 生成的静态 HTML 演示变成**能在浏览器里随手改**的演示——点字直接改、
+> 拖图片进去、撤销重做、拖缩略图换页序、自动保存、导出干净 HTML。零依赖，不毁原设计，
+> 保留逐字稿。按 **E** 或点 ✎ 进入编辑。
+
 ## Features
 
 - ✏️ **Inline text editing** — click any heading/paragraph/list item and type
@@ -72,6 +83,31 @@ The deck's slides should use class `.slide`, with the visible one marked
 `.is-active`, ideally inside a `.deck` container. Speaker notes in
 `<aside class="notes">` are preserved and never turned into editable on-slide
 text. No Node, npm, build, or network required.
+
+## How it compares to other slide / PPT skills
+
+These tools mostly **generate** decks. `editable-html-slides` is different — it
+**adds editing to a deck you already have**, so it composes with the generators
+rather than competing with them. An honest side-by-side:
+
+| | **editable-html-slides** (this) | [html-ppt](https://github.com/lewislulu/html-ppt-skill) | [frontend-slides](https://github.com/zarazhangrui/frontend-slides) | frontend-slides-editable | Claude for PowerPoint |
+|---|---|---|---|---|---|
+| Primary job | **make an existing deck editable** | generate HTML decks (+ presenter mode) | generate HTML decks | generate + edit HTML decks | generate/edit native `.pptx` |
+| Dependencies | **none** (no Node/npm/build) | none | Node (+ Python for PPT import) | Node 18+ | PowerPoint + paid plan |
+| In-browser text edit | ✅ | ❌ (edit source) | ✅ (light) | ✅ | ✅ |
+| Add image / drag / resize | ✅ | ❌ | ⚠️ limited | ✅ (+ multi-select, video) | ✅ |
+| Undo / redo | ✅ | ❌ | ❌ | ✅ | ✅ |
+| Reorder slides (drag) | ✅ filmstrip | via source | ❌ | ✅ | ✅ |
+| Import existing PPT/PDF | ❌ | ❌ | ✅ PPT→HTML | ✅ (lossy redesign) | — (already PPT) |
+| Export | ✅ single-file HTML | — | ✅ + deploy URL / PDF | ✅ single-file | native `.pptx` |
+| **Keeps your existing design + speaker notes** | ✅ **untouched** | n/a (it *is* the deck) | ❌ regenerates | ❌ conversion redesigns | ❌ |
+
+**Pick this when** you've already generated a deck you like (e.g. with html-ppt)
+and just want it to stay editable for non-developers — without a build step or
+losing the design/notes. **Pick a generator** (html-ppt, frontend-slides) when
+you need to create a deck from scratch. **Pick frontend-slides-editable** when you
+want a heavier editor (multi-select, video, PPT import) and don't mind Node.
+**Pick Claude for PowerPoint** when the deliverable must be a native `.pptx`.
 
 ## License
 
