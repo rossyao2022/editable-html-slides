@@ -11,9 +11,6 @@ tags:
   - editor
   - wysiwyg
   - frontend
-metadata:
-  author: rossyao2022
-  version: 1.0.0
 ---
 
 # editable-html-slides
