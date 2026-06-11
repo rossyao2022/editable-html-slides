@@ -1,18 +1,6 @@
 ---
 name: editable-html-slides
-description: >-
-  Add a self-contained, dependency-free in-browser WYSIWYG editor to any HTML
-  slide deck so the deck becomes editable after it is generated — click text to
-  rewrite it, drop in images, drag/resize/delete objects, undo/redo, reorder
-  slides via a filmstrip, autosave to localStorage, and export a clean
-  standalone HTML. Use this skill WHENEVER the user wants an "editable HTML"
-  presentation, wants to tweak/adjust slides in the browser instead of editing
-  source, says the generated HTML "can't be edited" / "可编辑的 HTML" / "能不能
-  随手改" / "加点图片", asks to add inline/visual/WYSIWYG editing to a deck, or
-  wants drag-and-drop slide reordering — even if they don't name this skill. It
-  pairs especially well with html-ppt / reveal-style decks (preserves their
-  presenter view and speaker notes) but works on any deck using the
-  `.slide` / `.is-active` convention. Needs no Node, npm, build step, or network.
+description: Add a self-contained, dependency-free in-browser WYSIWYG editor to any HTML slide deck so the deck stays editable after it is generated — click text to rewrite it, drop in images, drag/resize/delete objects, undo/redo, reorder slides via a filmstrip, autosave to localStorage, and export a clean standalone HTML. Use this skill WHENEVER the user wants an editable HTML presentation, wants to tweak or adjust slides in the browser instead of editing source, says the generated HTML cannot be edited / 可编辑的 HTML / 随手改 / 加点图片, asks to add inline or visual or WYSIWYG editing to a deck, or wants drag-and-drop slide reordering — even if they don't name this skill. Pairs especially well with html-ppt / reveal-style decks (preserves presenter view and speaker notes) but works on any deck using the .slide / .is-active convention. Needs no Node, npm, build step, or network.
 license: MIT
 author: rossyao2022
 version: "1.0"
